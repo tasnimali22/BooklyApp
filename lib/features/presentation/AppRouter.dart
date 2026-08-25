@@ -1,7 +1,7 @@
 import 'package:bookly_app/features/presentation/bookDetelis/bookDeteliesview.dart';
 import 'package:bookly_app/features/presentation/data/cubit/cubit/fetch_feuture_book_cubit.dart';
 import 'package:bookly_app/features/presentation/home/HomeView.dart';
-import 'package:bookly_app/features/search/search.dart';
+import 'package:bookly_app/features/presentation/search/search.dart';
 import 'package:bookly_app/features/views/Splash.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -23,16 +23,6 @@ abstract class AppRouter {
       GoRoute(
         path: kSearchView,
         builder: (context, state) => const SearchView(),
-      ),
-      GoRoute(
-        path: kBookDeteliesView,
-        builder: (context, state) => BlocBuilder<FetchFeutureBookCubit, FetchFeutureBookState>(
-          builder: (context, state) {
-            return const Bookdeteliesview(
-              
-            );
-          },
-        ),
       ),
     ],
   );

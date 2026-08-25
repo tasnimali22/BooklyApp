@@ -1,4 +1,4 @@
-import 'package:bookly_app/AppRouter.dart';
+import 'package:bookly_app/features/presentation/AppRouter.dart';
 import 'package:bookly_app/contants/constant.dart';
 import 'package:bookly_app/features/presentation/data/cubit/cubit/fetch_feuture_book_cubit.dart';
 import 'package:bookly_app/features/presentation/data/repo/homeRepoImpli.dart';

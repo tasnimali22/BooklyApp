@@ -1,4 +1,4 @@
-import 'package:bookly_app/AppRouter.dart';
+import 'package:bookly_app/features/presentation/AppRouter.dart';
 import 'package:bookly_app/contants/constant.dart';
 import 'package:bookly_app/features/presentation/data/book_model/item.dart';
 import 'package:bookly_app/features/presentation/widgets/best_seller_image.dart';
@@ -9,9 +9,8 @@ import 'package:go_router/go_router.dart';
 import '../../../core/TextStyles.dart';
 
 class BestSellerItem extends StatelessWidget {
-  const BestSellerItem({super.key, required this.items, });
-    final Item items;
-
+  const BestSellerItem({super.key, required this.items});
+  final Item items;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class BestSellerItem extends StatelessWidget {
       },
       child: Row(
         children: [
-           BestSellerImage(image:items.volumeInfo?.imageLinks?.thumbnail?? "",),
+          BestSellerImage(image: items.volumeInfo?.imageLinks?.thumbnail ?? ""),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -39,7 +38,10 @@ class BestSellerItem extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 3),
-                   Text(items.volumeInfo?.authors![0] ?? "" , style: Styles.textStyle14),
+                  Text(
+                    items.volumeInfo?.authors![0] ?? "",
+                    style: Styles.textStyle14,
+                  ),
                   const SizedBox(height: 3),
                   Row(
                     children: [
