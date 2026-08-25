@@ -1,8 +1,8 @@
 import 'package:bookly_app/core/apiServies/apiServices.dart';
 import 'package:bookly_app/core/error/Failer.dart';
-import 'package:bookly_app/features/presentation/data/book_model/book_apis.dart';
-import 'package:bookly_app/features/presentation/data/book_model/item.dart';
-import 'package:bookly_app/features/presentation/data/repo/homeRepo.dart';
+import 'package:bookly_app/features/data/book_model/book_apis.dart';
+import 'package:bookly_app/features/data/book_model/item.dart';
+import 'package:bookly_app/features/data/repo/homeRepo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 

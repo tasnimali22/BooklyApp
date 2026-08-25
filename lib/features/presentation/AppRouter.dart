@@ -1,5 +1,5 @@
 import 'package:bookly_app/features/presentation/bookDetelis/bookDeteliesview.dart';
-import 'package:bookly_app/features/presentation/data/cubit/cubit/fetch_feuture_book_cubit.dart';
+import 'package:bookly_app/features/data/cubit/cubit/fetch_feuture_book_cubit.dart';
 import 'package:bookly_app/features/presentation/home/HomeView.dart';
 import 'package:bookly_app/features/presentation/search/search.dart';
 import 'package:bookly_app/features/splash/Splash.dart';

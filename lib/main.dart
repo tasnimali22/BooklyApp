@@ -1,7 +1,7 @@
 import 'package:bookly_app/features/presentation/AppRouter.dart';
 import 'package:bookly_app/contants/constant.dart';
-import 'package:bookly_app/features/presentation/data/cubit/cubit/fetch_feuture_book_cubit.dart';
-import 'package:bookly_app/features/presentation/data/repo/homeRepoImpli.dart';
+import 'package:bookly_app/features/data/cubit/cubit/fetch_feuture_book_cubit.dart';
+import 'package:bookly_app/features/data/repo/homeRepoImpli.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';

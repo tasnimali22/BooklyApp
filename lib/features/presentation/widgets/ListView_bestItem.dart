@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/presentation/data/cubit/cubit/fetch_feuture_book_cubit.dart';
+import 'package:bookly_app/features/data/cubit/cubit/fetch_feuture_book_cubit.dart';
 import 'package:bookly_app/features/presentation/widgets/best_seller_Item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,7 +17,7 @@ class ListviewBestitem extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: BestSellerItem(items: state.book[index],),
+                child: BestSellerItem(items: state.book[index]),
               );
             },
           );
