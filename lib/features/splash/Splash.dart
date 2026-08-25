@@ -1,5 +1,5 @@
 import 'package:bookly_app/features/presentation/AppRouter.dart';
-import 'package:bookly_app/features/views/widget/anationSlied.dart';
+import 'package:bookly_app/features/splash/widget/anationSlied.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
