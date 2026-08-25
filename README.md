@@ -1,17 +1,27 @@
-# bookly_app
+# 📚 bookly_app (Flutter Project)
 
-A new Flutter project.
+تطبيق Flutter مبني باستخدام أفضل ممارسات الهندسة المعمارية (Clean Architecture / Feature-First Pattern) وإدارة الحالات باستخدام **Bloc / Cubit**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📁 هيكلية المشروع (Project Structure)
 
-A few resources to get you started if this is your first Flutter project:
+```text
+lib/
+├── constants/         # الثوابت والألوان والخطوط العامة
+├── core/              # الخدمات المشتركة، الثوابت العالمية، والـ Utils
+├── features/          # المميزات الأساسية للتطبيق
+│   ├── data/          # طبقة البيانات
+│   │   ├── book_model/   # Data Models
+│   │   ├── cubit/        # إدارة الحالة (State Management)
+│   │   └── repo/         # Repositories (Data Sources & API Integrations)
+│   ├── presentation/  # واجهات المستخدم (UI Screens & Widgets)
+│   └── splash/        # شاشة البداية (Splash Screen)
+└── main.dart          # مدخل التطبيق الرئيسي
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+التقنيات المستخدمة (Tech Stack)
+Framework: Flutter
+Language: Dart
+State Management: Flutter Bloc / Cubit
+Rest API
+Architecture: Clean Architecture / Feature-First Architecture
